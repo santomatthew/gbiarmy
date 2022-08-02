@@ -1,0 +1,13 @@
+GBI ARMY : 
+
+Role :
+- Superadmin (Handle all)
+- Gembala / Bu Gembala (Handle Staff, Jemaat, Informasi)
+- Staff (Handle Jemaat & Informasi)
+- Jemaat (Read information)
+
+Command :
+yarn sequelize-cli model:generate --name Users --attributes name:string,email:string,password:string,birthday:date,address:string,phone_number:string,role_id:integer --underscored
+yarn sequelize-cli model:generate --name Informations --attributes name:string,description:string,user_id:integer --underscored
+yarn sequelize-cli model:generate --name Roles --attributes name:string --underscored
+yarn sequelize-cli model:generate --name Photos --attributes name:string,info_id:integer --underscored

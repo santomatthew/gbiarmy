@@ -6,4 +6,5 @@ module.exports = {
 
   // User
   register: require("../controller/user/register"),
+  login: require("../controller/user/login"),
 };

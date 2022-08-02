@@ -14,6 +14,7 @@ app.get("/api/v1/informations", controller.getInformations);
 
 // Users
 app.post("/api/v1/register", controller.register);
+app.post("/api/v1/login", controller.login);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
